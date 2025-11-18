@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+  /* font-family: "Onest", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display SC", serif; */
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  .nav{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+  }
+  .logo img{
+    height: 60px;
+  }
+
+  .cta-btn{
+    background-color: #cf1010;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  font-family: 'Playfair Display SC', serif;
+    transition: background-color 0.3s ease;
+  }
+  .cta-btn:hover{
+    background-color: #a80b0b;
+  } 
+
+  .pulsating-text {
+  color: #8B0000; /* Initial: dark red */
+  animation: pulseColor 2s infinite ease-in-out;
+}
+
+/* Animation */
+@keyframes pulseColor {
+  0% {
+    color: #8B0000; /* Blood red */
+  }
+  50% {
+    color: #000000; /* Black */
+  }
+  100% {
+    color: #8B0000; /* Back to red */
+  }
+}
+.logo a{
+  text-decoration: none;
+}
+
+.logo h1{
+  font-family: 'Playfair Display SC', serif;
+  font-size: 24px;
+  color: #333333;
+}
+
+.header-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 100vh;
+  background-image: url('../assets/header-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #000;
+  padding: 0 20px;
+}
