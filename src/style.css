@@ -27,7 +27,7 @@
   }
 
   .cta-btn{
-    background-color: #cf1010;
+    background-color: #8A2B31;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -39,6 +39,11 @@
   .cta-btn:hover{
     background-color: #a80b0b;
   } 
+
+  .cta-big{
+    padding: 20px 30px;
+    font-size: 1.2em;
+  }
 
   .pulsating-text {
   color: #8B0000; /* Initial: dark red */
@@ -71,11 +76,191 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   height: 100vh;
   background-image: url('../assets/header-bg.jpg');
   background-size: cover;
   background-position: center;
   color: #000;
   padding: 0 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header-content h1{
+  font-size: 89px;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display SC', serif;
+}
+.header-content h2{
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: 'Onest', sans-serif;
+}
+
+.header-content p{
+  font-size: 32px;
+  margin-bottom: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header-content .btn{
+  background-color: #8A2B31;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Playfair Display SC', serif;
+  transition: background-color 0.3s ease;
+}
+.header-content .btn:hover{
+  background-color: #a80b0b;
+}
+
+.services {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* 🔴 THIS makes the whole card red */
+.card {
+  background-color: #fff;              /* or #111, or whatever */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  padding: 20px;
+  text-align: left;
+  color: #000;                        /* text color */
+  overflow: hidden;                   /* so content doesn't overflow corners */
+}
+
+/* image just sits on top */
+.card-img img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* normal (flat) CSS – no nested rules */
+.card-content h3 {
+  font-family: 'Playfair Display SC', serif;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+}
+
+.card:hover {
+  background-color: #8A2B31;  /* darker red on hover */
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+  p{
+    color: #fff;
+  }
+}
+
+.about{
+width: 90%;
+margin: 0 auto;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+
+
+.about h2{
+  font-size: 52px;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display SC', serif;
+}
+.about p{
+  font-size: 28px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  margin-bottom: 2em;
+}
+
+.contact{
+  width: 90%;
+  margin: 0 auto;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+input, textarea{
+  padding: 20px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.contact h2{
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display SC', serif;
+}
+
+
+.contact p{
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  margin-bottom: 2em;
+}
+
+.footer-content{
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .header-content h1{
+    font-size: 48px;
+  }
+  .header-content h2{
+    font-size: 24px;
+  }
+  .header-content p{
+    font-size: 20px;
+  }
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
 }
